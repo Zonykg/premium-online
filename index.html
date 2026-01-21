@@ -20,7 +20,7 @@
     button{font:inherit}
     .container{width:min(1200px, 92%);margin-inline:auto}
 
-    /* Header */
+    
     header{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px}
     .brand{display:flex;align-items:center;gap:10px}
@@ -36,25 +36,25 @@
     .btn.brand{background:linear-gradient(135deg,rgba(108,240,194,.20),rgba(122,167,255,.18));border-color:transparent}
     .burger{display:none}
 
-    /* Pages */
+   
     main{padding:20px 0}
     .page{display:none;opacity:0;transform:translateY(6px);transition:.25s ease}
     .page.active{display:block;opacity:1;transform:none}
 
-    /* Hero */
+   
     .hero{position:relative;margin:10px 0 20px;border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);overflow:hidden;background:linear-gradient(135deg,rgba(122,167,255,.10),rgba(108,240,194,.10));}
     .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center;padding:24px}
     .hero h2{font-size:28px;margin:0 0 8px}
     .hero p{color:var(--muted);margin:0 0 14px}
 
-    /* Filter toolbar */
+    
     .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:14px 0}
     .chips{display:flex;gap:8px;flex-wrap:wrap}
     .chip{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.10);color:var(--muted);cursor:pointer}
     .chip.active,.chip:hover{background:rgba(255,255,255,.06);color:var(--text)}
     select{background:var(--soft);border:1px solid rgba(255,255,255,.10);color:var(--text);padding:8px 10px;border-radius:10px}
 
-    /* Product grid */
+  
     .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
     .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
     .thumb{aspect-ratio:1/1;position:relative}
@@ -67,7 +67,6 @@
     .was{font-size:12px;color:var(--muted);text-decoration:line-through}
     .meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}
 
-    /* Drawer Cart */
     .drawer{position:fixed;inset:0;pointer-events:none}
     .drawer.open{pointer-events:auto}
     .drawer .backdrop{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;transition:.2s}
@@ -82,7 +81,7 @@
     .qty button{all:unset;padding:6px 10px;cursor:pointer}
     .panel footer{margin-top:auto;padding:14px;border-top:1px solid rgba(255,255,255,.06);display:grid;gap:8px}
 
-    /* Modal */
+   
     .modal{position:fixed;inset:0;display:none;place-items:center;padding:18px}
     .modal.open{display:grid}
     .modal .backdrop{position:absolute;inset:0;background:rgba(0,0,0,.6)}
@@ -90,11 +89,11 @@
     .win-media{background:var(--soft)}
     .win-body{padding:16px;display:grid;gap:10px}
 
-    /* Footer */
+   
     footer{margin:30px 0;color:var(--muted)}
     .footgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);padding:18px;border-radius:16px}
 
-    /* Responsive */
+   
     @media (max-width: 1000px){
       .grid{grid-template-columns:repeat(3,1fr)}
       .hero-inner{grid-template-columns:1fr}
@@ -116,7 +115,7 @@
   </style>
 </head>
 <body>
-  <!-- HEADER -->
+ 
   <header>
     <div class="container nav">
       <div class="brand"><div class="logo"></div><h1>ADMON Shop</h1></div>
@@ -137,9 +136,9 @@
     </div>
   </header>
 
-  <!-- MAIN PAGES -->
+  
   <main class="container">
-    <!-- HOME -->
+   
     <section id="home" class="page active">
       <div class="hero">
         <div class="hero-inner">
@@ -156,7 +155,7 @@
       </div>
     </section>
 
-    <!-- SHOP -->
+ 
     <section id="shop" class="page">
       <div class="toolbar">
         <div class="chips" id="chipRow"></div>
@@ -173,22 +172,22 @@
       <div class="grid" id="grid"></div>
     </section>
 
-    <!-- ABOUT / CONTACT -->
+   
     <section id="about" class="page">
       <h3>Бидний тухай</h3>
-      <p>ADMON нь минимал, хурдан, найдвартай онлайн дэлгүүрийн туршлага санал болгодог.</p>
+      <p>Minimal shop нь минимал, хурдан, найдвартай онлайн дэлгүүрийн туршлага санал болгодог.</p>
     </section>
     <section id="contact" class="page">
       <h3>Холбоо барих</h3>
-      <p>Email: hello@admon.shop · Утас: 9999-0000</p>
+      <p>Email: hello@minimal.shop · Утас: 9999-0000</p>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  
   <footer class="container">
     <div class="footgrid">
       <div>
-        <h4>ADMON</h4>
+        <h4>Minimal shop</h4>
         <p>Орчин үеийн онлайн дэлгүүр.</p>
         <div style="display:flex;gap:8px"><input placeholder="Имэйлээ оруул" style="flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.10);background:var(--soft);color:var(--text)"><button class="btn brand">Бүртгүүлэх</button></div>
       </div>
@@ -199,7 +198,6 @@
     <p style="text-align:center;margin-top:12px">© 2025 ADMON — Бүх эрх хуулиар хамгаалагдсан.</p>
   </footer>
 
-  <!-- CART DRAWER -->
   <div class="drawer" id="drawer">
     <div class="backdrop" onclick="toggleCart(false)"></div>
     <div class="panel">
@@ -217,7 +215,6 @@
     </div>
   </div>
 
-  <!-- MODAL (Quick view) -->
   <div class="modal" id="modal">
     <div class="backdrop" onclick="closeModal()"></div>
     <div class="window">
@@ -240,7 +237,7 @@
     const el = s=>document.querySelector(s); const els = s=>Array.from(document.querySelectorAll(s));
     const money = n=> new Intl.NumberFormat('mn-MN').format(n)+'₮';
 
-    // SPA Navigation
+   
     function go(page){
       els('.navlinks a').forEach(a=>a.classList.toggle('active', a.dataset.page===page));
       els('.page').forEach(p=>{
@@ -252,24 +249,24 @@
     el('#burger').onclick = ()=> el('#navlinks').classList.toggle('open');
     els('.navlinks a').forEach(a=> a.onclick = ()=> go(a.dataset.page));
 
-    // Search shortcut
+  
     window.addEventListener('keydown', e=>{ if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){ e.preventDefault(); el('#q').focus(); }});
 
-    // Data
+ 
     const categories=["Бүгд","Хувцас","Гутал","Дагалдах","Технологи","Ном","Гэр ахуй"];
     const products=[
-      {id:1,title:"Oversized Hoodie",cat:"Хувцас",price:129900, was:169900, img:"https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop", rating:4.7, sold:987, date: "2025-03-22"},
+      {id:1,title:"Oversized Hoodie",cat:"Хувцас",price:129900, was:169900, img:"https://anothercotton.com/cdn/shop/files/ACL-IA-HG2.jpg?v=1732287739&width=1080", rating:4.7, sold:987, date: "2025-03-22"},
       {id:2,title:"Minimal Sneakers",cat:"Гутал",price:199900, was:249900, img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop", rating:4.9, sold:1523, date:"2025-04-10"},
-      {id:3,title:"Smart Watch S3",cat:"Технологи",price:499900, was:0, img:"https://images.unsplash.com/photo-1511735111819-9a3f7709049c?q=80&w=1200&auto=format&fit=crop", rating:4.6, sold:623, date:"2025-05-02"},
-      {id:4,title:"Leather Backpack",cat:"Дагалдах",price:279900, was:329900, img:"https://images.unsplash.com/photo-1511385348-a52b4a160dc2?q=80&w=1200&auto=format&fit=crop", rating:4.5, sold:341, date:"2025-01-28"},
-      {id:5,title:"Ergonomic Chair",cat:"Гэр ахуй",price:699900, was:799900, img:"https://images.unsplash.com/photo-1582582429416-0ef9f9e11ec0?q=80&w=1200&auto=format&fit=crop", rating:4.8, sold:274, date:"2024-12-19"},
-      {id:6,title:"Noise-cancel Headphones",cat:"Технологи",price:599900, was:699900, img:"https://images.unsplash.com/photo-1518442157232-75f0b42b1dd9?q=80&w=1200&auto=format&fit=crop", rating:4.7, sold:1111, date:"2025-02-14"},
-      {id:7,title:"Classic Novel",cat:"Ном",price:29900, was:59000, img:"https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop", rating:4.9, sold:841, date:"2025-06-01"},
-      {id:8,title:"Everyday Tote",cat:"Дагалдах",price:89900, was:0, img:"https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop", rating:4.4, sold:402, date:"2025-03-01"},
-      {id:9,title:"Running Shoes Pro",cat:"Гутал",price:259900, was:299900, img:"https://images.unsplash.com/photo-1526401485004-2fda9f4b5c4f?q=80&w=1200&auto=format&fit=crop", rating:4.8, sold:950, date:"2025-05-25"},
-      {id:10,title:"Linen Shirt",cat:"Хувцас",price:99900, was:119900, img:"https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop", rating:4.3, sold:208, date:"2025-04-30"},
-      {id:11,title:"Scented Candle",cat:"Гэр ахуй",price:19900, was:0, img:"https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop", rating:4.6, sold:510, date:"2025-03-18"},
-      {id:12,title:"Wireless Keyboard",cat:"Технологи",price:149900, was:189900, img:"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop", rating:4.5, sold:690, date:"2025-05-12"}
+      {id:3,title:"Smart Watch S3",cat:"Технологи",price:499900, was:0, img:"https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2024/08/xiaomi-watch-s3-04-2-1.jpg?w=1600&h=900&fit=crop", rating:4.6, sold:623, date:"2025-05-02"},
+      {id:4,title:"Leather Backpack",cat:"Дагалдах",price:279900, was:329900, img:"https://www.satchel-page.com/cdn/shop/products/L1020003-Edit_1600x.jpg?v=1571754790", rating:4.5, sold:341, date:"2025-01-28"},
+      {id:5,title:"Ergonomic Chair",cat:"Гэр ахуй",price:699900, was:799900, img:"https://www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313", rating:4.8, sold:274, date:"2024-12-19"},
+      {id:6,title:"Noise-cancel Headphones",cat:"Технологи",price:599900, was:699900, img:"https://cdn.thewirecutter.com/wp-content/media/2023/09/noise-cancelling-headphone-2048px-0876.jpg", rating:4.7, sold:1111, date:"2025-02-14"},
+      {id:7,title:"Classic Novel",cat:"Ном",price:29900, was:59000, img:"https://i.insider.com/60f878910729770012b924e7?width=800&format=jpeg&auto=webp", rating:4.9, sold:841, date:"2025-06-01"},
+      {id:8,title:"Everyday Tote",cat:"Дагалдах",price:89900, was:0, img:"https://dmeow.co/cdn/shop/files/279A3582_1445x.png?v=1751607405", rating:4.4, sold:402, date:"2025-03-01"},
+      {id:9,title:"Running Shoes Pro",cat:"Гутал",price:259900, was:299900, img:"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/c4567adb4e154767a1d088820c013bff_9366/adizero-adios-pro-4-shoes.jpg", rating:4.8, sold:950, date:"2025-05-25"},
+      {id:10,title:"Linen Shirt",cat:"Хувцас",price:99900, was:119900, img:"https://www.nobalifestyle.com/cdn/shop/files/5_5f7a68bc-ab88-4b9b-b1e4-d400b1f69249.png?v=1711108841&width=2048", rating:4.3, sold:208, date:"2025-04-30"},
+      {id:11,title:"Scented Candle",cat:"Гэр ахуй",price:19900, was:0, img:"https://www.kindredfires.com/cdn/shop/files/NEWCD-JAR_828bebbe-c086-4c3f-beb2-7e9e39c0b1b5.jpg?v=1742503423 ", rating:4.6, sold:510, date:"2025-03-18"},
+      {id:12,title:"Wireless Keyboard",cat:"Технологи",price:149900, was:189900, img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMINugoH441H5f9L9MBB_qGSoA6MkhMMa87g&s", rating:4.5, sold:690, date:"2025-05-12"}
     ];
 
     const state = { cat:'Бүгд', sort:'pop', q:'' };
@@ -317,11 +314,11 @@
       els('[data-view]').forEach(b=> b.onclick = ()=> openModal( products.find(x=> x.id==b.dataset.view) ));
     }
 
-    // Search & Sort
+ 
     el('#q').addEventListener('input', e=>{ state.q = e.target.value; renderGrid(); });
     el('#sort').addEventListener('change', e=>{ state.sort = e.target.value; renderGrid(); });
 
-    // Cart
+   
     let cart = JSON.parse(localStorage.getItem('cart_v1')||'[]');
     const saveCart = ()=> localStorage.setItem('cart_v1', JSON.stringify(cart));
     const cartCount = ()=> cart.reduce((a,b)=> a+b.qty, 0);
@@ -358,13 +355,13 @@
     function toggleCart(open){ const d = el('#drawer'); d.classList.toggle('open', open!==undefined? open: !d.classList.contains('open')); }
     el('#openCart').onclick = ()=> toggleCart();
 
-    // Modal
+   
     let currentModal = null;
     function openModal(p){ currentModal = p; el('#mImg').src = p.img; el('#mTitle').textContent = p.title; el('#mCat').textContent = p.cat + ' · ★ ' + p.rating; el('#mPrice').textContent = format(p.price); el('#mWas').textContent = p.was? format(p.was): ''; el('#modal').classList.add('open'); }
     function closeModal(){ el('#modal').classList.remove('open'); }
     function buyNow(){ addToCart(currentModal); closeModal(); }
 
-    // Init
+ 
     function boot(){ renderChips(); renderGrid(); updateCartUI(); }
     boot();
   </script>
